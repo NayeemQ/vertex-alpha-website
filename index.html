@@ -3,52 +3,109 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Vertex Alpha Partners</title>
+  <title>Vertex Alpha Partners – Data-Driven Hedge Fund</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-      background: #f4f6f8;
-      color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #f9fafb;
+      color: #1a202c;
       line-height: 1.6;
     }
     header {
-      background: #004080;
+      background-color: #0d3b66;
       color: white;
-      padding: 20px 0;
+      padding: 30px 20px;
       text-align: center;
     }
     header h1 {
       margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 1px;
     }
     main {
-      max-width: 800px;
+      max-width: 900px;
       margin: 40px auto;
       padding: 0 20px;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    section {
+      margin-bottom: 50px;
     }
     h2 {
-      color: #004080;
+      color: #0d3b66;
+      font-size: 1.8rem;
+      margin-bottom: 15px;
     }
     p {
+      font-size: 1.1rem;
       margin-bottom: 20px;
+    }
+    .value-prop {
+      background: #f0f4f8;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(13, 59, 102, 0.1);
+    }
+    .value-prop h2 {
+      margin-bottom: 10px;
+    }
+    .benefits-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+    .benefit {
+      background: white;
+      flex: 1 1 45%;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .benefit h3 {
+      margin-top: 0;
+      color: #0d3b66;
     }
     .cta-button {
       display: inline-block;
-      background: #004080;
+      background-color: #0d3b66;
       color: white;
-      padding: 15px 30px;
-      border-radius: 5px;
+      padding: 15px 35px;
+      border-radius: 6px;
+      font-weight: 600;
       text-decoration: none;
-      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .cta-button:hover {
+      background-color: #084a8e;
     }
     footer {
       text-align: center;
-      padding: 20px;
-      color: #777;
-      font-size: 14px;
+      padding: 25px 15px;
+      background: #e2e8f0;
+      color: #4a5568;
+      font-size: 0.9rem;
+    }
+    .video-wrapper {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    iframe {
+      width: 100%;
+      max-width: 700px;
+      height: 400px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    @media (max-width: 600px) {
+      .benefits-list {
+        flex-direction: column;
+      }
+      .benefit {
+        flex: 1 1 100%;
+      }
     }
   </style>
 </head>
@@ -58,16 +115,46 @@
   </header>
 
   <main>
-    <h2>Precision-Driven Hedge Fund Strategies</h2>
-    <p>Are you seeking superior risk-adjusted returns with a data-driven approach? At Vertex Alpha Partners, we blend quantitative analytics, fundamental research, and macroeconomic strategy to unlock market inefficiencies and protect your capital.</p>
-    
-    <p>Our tailored investment solutions are designed for institutional and high-net-worth investors aiming to outperform in any market environment.</p>
-    
-    <a href="mailto:contact@vertexalphapartners.com" class="cta-button">Contact Us</a>
+    <section class="value-prop">
+      <h2>Unlock Superior, Risk-Adjusted Returns with Data-Driven Precision</h2>
+      <p>Combining quantitative analytics, fundamental research, and macroeconomic insights, we deliver tailored investment strategies designed to outperform in any market environment.</p>
+      <a href="mailto:contact@vertexalphapartners.com" class="cta-button">Contact Us Today</a>
+    </section>
+
+    <section class="video-wrapper">
+      <!-- Replace the src URL with your video link -->
+      <iframe src="https://www.youtube.com/embed/1a6U7u7Tq7o" title="Vertex Alpha Partners Intro Video" allowfullscreen></iframe>
+    </section>
+
+    <section>
+      <h2>Why Choose Vertex Alpha Partners?</h2>
+      <div class="benefits-list">
+        <div class="benefit">
+          <h3>Data-Driven Strategies</h3>
+          <p>Leverage advanced quantitative models combined with rigorous fundamental analysis.</p>
+        </div>
+        <div class="benefit">
+          <h3>Capital Preservation</h3>
+          <p>Focused risk management to protect your investments through market volatility.</p>
+        </div>
+        <div class="benefit">
+          <h3>Tailored Solutions</h3>
+          <p>Customized investment strategies aligned with your financial goals and risk appetite.</p>
+        </div>
+        <div class="benefit">
+          <h3>Global Market Expertise</h3>
+          <p>Capitalizing on inefficiencies across global markets to maximize returns.</p>
+        </div>
+      </div>
+    </section>
+
+    <section style="text-align:center;">
+      <a href="mailto:contact@vertexalphapartners.com" class="cta-button">Schedule a Demo</a>
+    </section>
   </main>
 
   <footer>
-    &copy; 2025 Vertex Alpha Partners. All rights reserved.
+    &copy; 2025 Vertex Alpha Partners | <a href="mailto:contact@vertexalphapartners.com">contact@vertexalphapartners.com</a>
   </footer>
 </body>
 </html>
